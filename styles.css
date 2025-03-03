@@ -102,7 +102,7 @@ body {
   
   #navbar .menu-toggle .bar {
     width: 25px;
-    height: 3px;
+    height: 2px;
     background: #fff;
     margin: 4px 0;
     transition: 0.4s;
@@ -200,6 +200,7 @@ body {
         line-height: 1.8;
         animation: fadeInRight 1s ease;
       }
+      
   }
   
   /* Skills Section */
@@ -267,7 +268,7 @@ body {
   }
   
   #projects .project p {
-    font-size: 14px;
+    font-size: 18px;
     color: #ccc;
     margin-bottom: 15px;
   }
