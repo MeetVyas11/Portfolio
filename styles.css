@@ -162,22 +162,30 @@ body {
   }
   
   #about .profile-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 400px;
+    height: 500px;
+    border-radius: 20%;
     object-fit: cover;
     border: 3px solid #007BFF;
     animation: fadeInLeft 1s ease;
   }
   
   #about p {
-    font-size: 16px;
+    font-size: 18px;
     color: #ccc;
     line-height: 1.8;
     animation: fadeInRight 1s ease;
   }
   
   @media (max-width: 768px) {
+    #about .profile-img {
+        width: 330px;
+        height: 440px;
+        border-radius: 20%;
+        object-fit: cover;
+        border: 3px solid #007BFF;
+        animation: fadeInLeft 1s ease;
+      }
     #about .about-content {
       flex-direction: column;
       text-align: center;
@@ -186,6 +194,12 @@ body {
     #about .profile-img {
       margin-bottom: 20px;
     }
+    #about p {
+        font-size: 20px;
+        color: #ccc;
+        line-height: 1.8;
+        animation: fadeInRight 1s ease;
+      }
   }
   
   /* Skills Section */
