@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Web Developer Portfolio</title>
+  <title>Meet Vyas - Web Developer Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -13,31 +14,36 @@
     <div class="container">
       <a href="#home" class="logo">Meet Vyas</a>
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
   </nav>
 
   <!-- Home Section -->
   <section id="home" class="section">
     <div class="container">
-      <h1>Hi, I'm <span class="highlight">Meet Vyas</span></h1>
-      <p>A passionate web developer creating modern and responsive websites.</p>
-      <a href="#projects" class="btn">View My Work</a>
+      <h1 class="animate__animated animate__fadeInDown">Hi, I'm <span class="highlight">Meet Vyas</span></h1>
+      <p class="animate__animated animate__fadeInUp">A passionate web developer creating modern and responsive websites.</p>
+      <a href="#projects" class="btn animate__animated animate__fadeIn">View My Work</a>
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="section">
     <div class="container">
-      <h2>About Me</h2>
+      <h2 class="animate__animated animate__fadeIn">About Me</h2>
       <div class="about-content">
-        <img src="profile.jpg" alt="Your Name" class="profile-img">
-        <p>I'm a web developer with expertise in HTML, CSS, JavaScript, and modern frameworks like React. I love building user-friendly and visually appealing websites. With a strong focus on clean code and responsive design, I strive to deliver the best experience for users.</p>
+        <img src="profile.jpg" alt="Meet Vyas" class="profile-img animate__animated animate__fadeInLeft">
+        <p class="animate__animated animate__fadeInRight">I'm a web developer with expertise in HTML, CSS, JavaScript, and modern frameworks like React. I love building user-friendly and visually appealing websites. With a strong focus on clean code and responsive design, I strive to deliver the best experience for users.</p>
       </div>
     </div>
   </section>
@@ -45,29 +51,29 @@
   <!-- Skills Section -->
   <section id="skills" class="section">
     <div class="container">
-      <h2>Skills</h2>
+      <h2 class="animate__animated animate__fadeIn">Skills</h2>
       <div class="skills-grid">
-        <div class="skill">
+        <div class="skill animate__animated animate__fadeInUp">
           <i class="fab fa-html5"></i>
           <h3>HTML5</h3>
         </div>
-        <div class="skill">
+        <div class="skill animate__animated animate__fadeInUp animate__delay-1s">
           <i class="fab fa-css3-alt"></i>
           <h3>CSS3</h3>
         </div>
-        <div class="skill">
+        <div class="skill animate__animated animate__fadeInUp animate__delay-2s">
           <i class="fab fa-js"></i>
           <h3>JavaScript</h3>
         </div>
-        <div class="skill">
+        <div class="skill animate__animated animate__fadeInUp animate__delay-3s">
           <i class="fab fa-react"></i>
           <h3>React</h3>
         </div>
-        <div class="skill">
+        <div class="skill animate__animated animate__fadeInUp animate__delay-4s">
           <i class="fab fa-node-js"></i>
           <h3>Node.js</h3>
         </div>
-        <div class="skill">
+        <div class="skill animate__animated animate__fadeInUp animate__delay-5s">
           <i class="fab fa-git"></i>
           <h3>Git</h3>
         </div>
@@ -78,21 +84,21 @@
   <!-- Projects Section -->
   <section id="projects" class="section">
     <div class="container">
-      <h2>Projects</h2>
+      <h2 class="animate__animated animate__fadeIn">Projects</h2>
       <div class="projects-grid">
-        <div class="project">
+        <div class="project animate__animated animate__fadeInLeft">
           <img src="project1.jpg" alt="Project 1">
           <h3>Project 1</h3>
           <p>A responsive e-commerce website built with React and Node.js.</p>
           <a href="#" class="btn">View Project</a>
         </div>
-        <div class="project">
+        <div class="project animate__animated animate__fadeInUp">
           <img src="project2.jpg" alt="Project 2">
           <h3>Project 2</h3>
           <p>A portfolio website with modern design and animations.</p>
           <a href="#" class="btn">View Project</a>
         </div>
-        <div class="project">
+        <div class="project animate__animated animate__fadeInRight">
           <img src="project3.jpg" alt="Project 3">
           <h3>Project 3</h3>
           <p>A blog platform with user authentication and CRUD functionality.</p>
@@ -105,9 +111,9 @@
   <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="container">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" id="name" placeholder="Your Name" required>
+      <h2 class="animate__animated animate__fadeIn">Contact Me</h2>
+      <form id="contact-form" class="animate__animated animate__fadeInUp">
+        <input type="text" id="name" placeholder="Meet Vyas" required>
         <input type="email" id="email" placeholder="Your Email" required>
         <textarea id="message" placeholder="Your Message" required></textarea>
         <button type="submit" class="btn">Send Message</button>
