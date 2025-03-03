@@ -15,7 +15,7 @@ body {
   }
   
   .section {
-    padding: 100px 0;
+    padding: 80px 0;
   }
   
   h1, h2, h3 {
@@ -140,12 +140,18 @@ body {
   #home h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    animation: fadeInDown 1s ease;
   }
   
   #home p {
     font-size: 18px;
     margin-bottom: 30px;
     color: #ccc;
+    animation: fadeInUp 1s ease;
+  }
+  
+  #home .btn {
+    animation: fadeIn 1.5s ease;
   }
   
   /* About Section */
@@ -161,18 +167,24 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #007BFF;
+    animation: fadeInLeft 1s ease;
   }
   
   #about p {
     font-size: 16px;
     color: #ccc;
     line-height: 1.8;
+    animation: fadeInRight 1s ease;
   }
   
   @media (max-width: 768px) {
     #about .about-content {
       flex-direction: column;
       text-align: center;
+    }
+  
+    #about .profile-img {
+      margin-bottom: 20px;
     }
   }
   
@@ -189,6 +201,7 @@ body {
     background: #222;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease;
   }
   
   #skills .skill:hover {
@@ -220,6 +233,7 @@ body {
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease;
   }
   
   #projects .project:hover {
@@ -251,6 +265,7 @@ body {
     gap: 15px;
     max-width: 600px;
     margin: 0 auto;
+    animation: fadeInUp 1s ease;
   }
   
   #contact input, #contact textarea {
@@ -292,4 +307,58 @@ body {
   
   footer .social-links a:hover {
     color: #007BFF;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
