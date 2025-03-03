@@ -1,0 +1,379 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f4f4f4;
+    background: #1a1a1a;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section {
+    padding: 80px 0;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+  }
+  
+  h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #007BFF;
+    margin: 10px auto 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+  }
+  
+  /* Navigation Bar */
+  #navbar {
+    background: #111;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  #navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #navbar .nav-links a:hover {
+    color: #007BFF;
+  }
+  
+  /* Mobile Menu */
+  #navbar .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  #navbar .menu-toggle .bar {
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Responsive Navigation */
+  @media (max-width: 768px) {
+    #navbar .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #111;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 20px 0;
+    }
+  
+    #navbar .nav-links.active {
+      display: flex;
+    }
+  
+    #navbar .menu-toggle {
+      display: flex;
+    }
+  }
+  
+  /* Home Section */
+  #home {
+    background: #111;
+    text-align: center;
+    padding: 150px 0;
+  }
+  
+  #home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease;
+  }
+  
+  #home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ccc;
+    animation: fadeInUp 1s ease;
+  }
+  
+  #home .btn {
+    animation: fadeIn 1.5s ease;
+  }
+  
+  /* About Section */
+  #about .about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  #about .profile-img {
+    width: 400px;
+    height: 500px;
+    border-radius: 20%;
+    object-fit: cover;
+    border: 3px solid #007BFF;
+    animation: fadeInLeft 1s ease;
+  }
+  
+  #about p {
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.8;
+    animation: fadeInRight 1s ease;
+  }
+  
+  @media (max-width: 768px) {
+    #about .profile-img {
+        width: 330px;
+        height: 440px;
+        border-radius: 20%;
+        object-fit: cover;
+        border: 3px solid #007BFF;
+        animation: fadeInLeft 1s ease;
+      }
+    #about .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #about .profile-img {
+      margin-bottom: 20px;
+    }
+    #about p {
+        font-size: 20px;
+        color: #ccc;
+        line-height: 1.8;
+        animation: fadeInRight 1s ease;
+      }
+      
+  }
+  
+  /* Skills Section */
+  #skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  #skills .skill {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease;
+  }
+  
+  #skills .skill:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+  }
+  
+  #skills .skill i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #007BFF;
+  }
+  
+  #skills .skill h3 {
+    font-size: 18px;
+    color: #f4f4f4;
+  }
+  
+  /* Projects Section */
+  #projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  #projects .project {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease;
+  }
+  
+  #projects .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+  }
+  
+  #projects .project img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  #projects .project h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #projects .project p {
+    font-size: 18px;
+    color: #ccc;
+    margin-bottom: 15px;
+  }
+  
+  /* Contact Section */
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease;
+  }
+  
+  #contact input, #contact textarea {
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #222;
+    color: #f4f4f4;
+    font-size: 16px;
+  }
+  
+  #contact textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  #contact input::placeholder, #contact textarea::placeholder {
+    color: #888;
+  }
+  
+  /* Footer */
+  footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  footer .social-links {
+    margin-top: 10px;
+  }
+  
+  footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  footer .social-links a:hover {
+    color: #007BFF;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
