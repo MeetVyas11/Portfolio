@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section {
+    padding: 80px 0;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #0056b3;
+  }
+  
+  /* Navigation Bar */
+  #navbar {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  #navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  #navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #navbar .nav-links a:hover {
+    color: #007BFF;
+  }
+  
+  /* Home Section */
+  #home {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 150px 0;
+  }
+  
+  #home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  #home p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  /* About Section */
+  #about .about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  #about .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Skills Section */
+  #skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  #skills .skill {
+    text-align: center;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+  }
+  
+  #skills .skill i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  /* Projects Section */
+  #projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  #projects .project {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #projects .project img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Contact Section */
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #contact input, #contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer .social-links {
+    margin-top: 10px;
+  }
+  
+  footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  footer .social-links a:hover {
+    color: #007BFF;
+  }
