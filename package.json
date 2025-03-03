@@ -1,0 +1,16 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "A professional web developer portfolio.",
+    "scripts": {
+      "start": "live-server .", 
+      "build": "echo 'No build step required for static site'", 
+      "deploy": "gh-pages -d ." 
+    },
+    "author": "Meet Vyas",
+    "license": "MIT",
+    "devDependencies": {
+      "live-server": "^1.2.2", 
+      "gh-pages": "^5.0.0" 
+    }
+  }
