@@ -6,6 +6,9 @@ body {
   color: #f4f4f4; /* White text */
   background: #1a1a1a; /* Matte black background */
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
 }
 
 /* Container for centering content */
@@ -13,6 +16,7 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  flex: 1; /* Allow the container to grow and push the footer down */
 }
 
 /* Section padding for spacing */
@@ -222,6 +226,7 @@ h2::after {
   #about p {
     font-size: 20px;
   }
+  
 }
 
 /* Skills Section */
@@ -328,7 +333,9 @@ footer {
   background: #2c2c2c; /* Matte grey */
   color: #f4f4f4; /* White */
   text-align: center;
-  padding: 40px 0;
+  padding: 20px 0;
+  margin-top: auto; /* Push the footer to the bottom */
+  margin-bottom: 4px;
 }
 
 footer .social-links {
