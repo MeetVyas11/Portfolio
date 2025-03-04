@@ -1,9 +1,17 @@
 // Mobile menu toggle
 const mobileMenu = document.getElementById('mobile-menu');
 const navLinks = document.querySelector('.nav-links');
+const body = document.body;
 
 mobileMenu.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
   navLinks.classList.toggle('active');
+});
+
+// Close menu when a link is clicked
+navLinks.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+  navLinks.classList.remove('active');
 });
 
 // Form submission handling
